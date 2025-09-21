@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Seeder;
 use App\Models\Product;
+use Illuminate\Database\Seeder;
 
 class ProductSeeder extends Seeder
 {
@@ -25,7 +25,7 @@ class ProductSeeder extends Seeder
             ['name' => 'Kilimeen', 'price' => 260.00],
         ];
 
-        foreach( $products as $product) {
+        foreach ($products as $product) {
             Product::create($product);
         }
     }
